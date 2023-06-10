@@ -255,6 +255,9 @@ class App:
         self.productsName.delete(0,tk.END)
         self.productsQuantity.delete(0,tk.END)
         self.productsPrice.delete(0,tk.END)
+        products = product.getAll()
+        self.combobox["values"] = products
+        self.combobox_2["values"] = products
 
     def reportsSells_command(self):
         trackingObject = tracking()
