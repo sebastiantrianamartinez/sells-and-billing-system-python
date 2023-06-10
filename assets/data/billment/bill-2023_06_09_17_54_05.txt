@@ -1,0 +1,9 @@
+Factura Tiendas Ara
+Fecha: 2023-06-09 17:54:05.382849
+Vendedor: Sebastian Triana Martinez
+
+
+Productos:
+Escoba (x1) (4000) 
+Recogedor (x1) (2000) 
+Total: 6000

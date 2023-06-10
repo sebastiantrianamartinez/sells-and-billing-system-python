@@ -1,0 +1,10 @@
+Factura Tiendas Ara
+Fecha: 2023-06-09 19:11:11.914247
+Vendedor: Sebastian Triana Martinez
+
+
+Productos:
+Escoba (x1) (4000) 
+Trapero (x1) (5000) 
+Guantes (x1) (4500) 
+Total: 13500
