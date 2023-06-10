@@ -259,11 +259,15 @@ class App:
     def reportsSells_command(self):
         trackingObject = tracking()
         tracks = trackingObject.sellsReport()
+        plt.plot(tracks[0], tracks[1])
+        plt.show()
 
 
     def reportsCash_command(self):
         trackingObject = tracking()
         tracks = trackingObject.sellsReport()
+        plt.plot(tracks[0], tracks[1])
+        plt.show()
 
 
     def stockUpdate_command(self):
