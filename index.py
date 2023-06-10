@@ -26,7 +26,7 @@ class App:
         root.geometry(alignstr)
         root.resizable(width=False, height=False)
 
-        systemTitle=tk.Label(root)
+        systemTitle=tk.Label(root, background='white')
         ft = tkFont.Font(family='Arial',size=16)
         systemTitle["font"] = ft
         systemTitle["fg"] = "#333333"
@@ -35,7 +35,7 @@ class App:
         systemTitle.place(x=10,y=10,width=524,height=30)
 
         #------CURRENT SELL------------------------------------------------------
-        self.combobox=ttk.Combobox(root)
+        self.combobox=ttk.Combobox(root, background='white')
         self.combobox["values"] = products  # Obtener solo los nombres de los productos
         self.combobox["font"] = tkFont.Font(family='Arial', size=10)
         self.combobox["foreground"] = "#333333"
@@ -43,7 +43,7 @@ class App:
         self.combobox.current(0)
         self.combobox.place(x=10, y=50, width=298, height=30)
 
-        self.sellQuantity=tk.Entry(root)
+        self.sellQuantity=tk.Entry(root, background='white')
         self.sellQuantity["borderwidth"] = "1px"
         ft = tkFont.Font(family='Arial',size=10)
         self.sellQuantity["font"] = ft
@@ -52,7 +52,7 @@ class App:
         self.sellQuantity.insert(0, "Cantidad")
         self.sellQuantity.place(x=320,y=50,width=69,height=30)
 
-        sellAdd=tk.Button(root)
+        sellAdd=tk.Button(root, background='white')
         sellAdd["bg"] = "#efefef"
         ft = tkFont.Font(family='Arial',size=10)
         sellAdd["font"] = ft
@@ -62,7 +62,7 @@ class App:
         sellAdd.place(x=400,y=50,width=68,height=30)
         sellAdd["command"] = self.sellAdd_command
 
-        sell=tk.Button(root)
+        sell=tk.Button(root, background='white')
         sell["bg"] = "#1e90ff"
         sell["borderwidth"] = "0px"
         ft = tkFont.Font(family='Arial',size=10)
@@ -75,7 +75,7 @@ class App:
 
         # ADD PRODUCTS----------------------------
 
-        productsDesc=tk.Label(root)
+        productsDesc=tk.Label(root, background='white')
         ft = tkFont.Font(family='Arial',size=10)
         productsDesc["font"] = ft
         productsDesc["fg"] = "#333333"
@@ -83,7 +83,7 @@ class App:
         productsDesc["text"] = "Productos:"
         productsDesc.place(x=10,y=160,width=70,height=25)
 
-        self.productsName=tk.Entry(root)
+        self.productsName=tk.Entry(root, background='white')
         self.productsName["borderwidth"] = "1px"
         ft = tkFont.Font(family='Arial',size=10)
         self.productsName["font"] = ft
@@ -92,7 +92,7 @@ class App:
         self.productsName.insert(0, "Nombre")
         self.productsName.place(x=10,y=190,width=243,height=30)
 
-        self.productsQuantity=tk.Entry(root)
+        self.productsQuantity=tk.Entry(root, background='white')
         self.productsQuantity["borderwidth"] = "1px"
         ft = tkFont.Font(family='Arial',size=10)
         self.productsQuantity["font"] = ft
@@ -101,7 +101,7 @@ class App:
         self.productsQuantity.insert(0, "Cantidad")
         self.productsQuantity.place(x=10,y=230,width=72,height=31)
 
-        self.productsPrice=tk.Entry(root)
+        self.productsPrice=tk.Entry(root, background='white')
         self.productsPrice["borderwidth"] = "1px"
         ft = tkFont.Font(family='Arial',size=10)
         self.productsPrice["font"] = ft
@@ -110,7 +110,7 @@ class App:
         self.productsPrice.insert(0, "Precio")
         self.productsPrice.place(x=90,y=230,width=83,height=30)
 
-        productsAdd=tk.Button(root)
+        productsAdd=tk.Button(root, background='white')
         productsAdd["bg"] = "#1e90ff"
         productsAdd["borderwidth"] = "0px"
         ft = tkFont.Font(family='Arial',size=10)
@@ -121,7 +121,7 @@ class App:
         productsAdd.place(x=180,y=230,width=72,height=30)
         productsAdd["command"] = self.productsAdd_command
 
-        reportsTitle=tk.Label(root)
+        reportsTitle=tk.Label(root, background='white')
         ft = tkFont.Font(family='Arial',size=10)
         reportsTitle["font"] = ft
         reportsTitle["fg"] = "#333333"
@@ -129,7 +129,7 @@ class App:
         reportsTitle["text"] = "Informes:"
         reportsTitle.place(x=10,y=280,width=70,height=25)
 
-        reportsSells=tk.Button(root)
+        reportsSells=tk.Button(root, background='white')
         reportsSells["bg"] = "#efefef"
         ft = tkFont.Font(family='Arial',size=10)
         reportsSells["font"] = ft
@@ -139,7 +139,7 @@ class App:
         reportsSells.place(x=10,y=310,width=152,height=30)
         reportsSells["command"] = self.reportsSells_command
 
-        reportsCash=tk.Button(root)
+        reportsCash=tk.Button(root, background='white')
         reportsCash["bg"] = "#efefef"
         ft = tkFont.Font(family='Arial',size=10)
         reportsCash["font"] = ft
@@ -149,7 +149,7 @@ class App:
         reportsCash.place(x=10,y=350,width=152,height=30)
         reportsCash["command"] = self.reportsCash_command
 
-        stockTitle=tk.Label(root)
+        stockTitle=tk.Label(root, background='white')
         ft = tkFont.Font(family='Arial',size=10)
         stockTitle["font"] = ft
         stockTitle["fg"] = "#333333"
@@ -157,7 +157,7 @@ class App:
         stockTitle["text"] = "Stock:"
         stockTitle.place(x=320,y=160,width=70,height=25)
 
-        self.combobox_2=ttk.Combobox(root)
+        self.combobox_2=ttk.Combobox(root, background='white')
         self.combobox_2["text"] = "Seleccione un producto"
         self.combobox_2["values"] = products
         self.combobox_2["font"] = tkFont.Font(family='Arial', size=10)
@@ -166,7 +166,7 @@ class App:
         self.combobox_2.current(0)
         self.combobox_2.place(x=320, y=190, width=241, height=30)
 
-        self.stockQuantity=tk.Entry(root)
+        self.stockQuantity=tk.Entry(root, background='white')
         self.stockQuantity["borderwidth"] = "1px"
         ft = tkFont.Font(family='Arial',size=10)
         self.stockQuantity["font"] = ft
@@ -175,7 +175,7 @@ class App:
         self.stockQuantity.insert(0,"Adicional")
         self.stockQuantity.place(x=320,y=230,width=100,height=30)
 
-        stockUpdate=tk.Button(root)
+        stockUpdate=tk.Button(root, background='white')
         stockUpdate["bg"] = "#1e90ff"
         stockUpdate["borderwidth"] = "0px"
         ft = tkFont.Font(family='Arial',size=10)
@@ -186,7 +186,7 @@ class App:
         stockUpdate.place(x=440,y=230,width=121,height=30)
         stockUpdate["command"] = self.stockUpdate_command
         
-        currentSellTitle=tk.Label(root)
+        currentSellTitle=tk.Label(root, background='white')
         ft = tkFont.Font(family='Arial',size=10)
         currentSellTitle["font"] = ft
         currentSellTitle["fg"] = "#333333"
@@ -194,7 +194,7 @@ class App:
         currentSellTitle["text"] = "Esta venta:"
         currentSellTitle.place(x=240,y=300,width=70,height=25)
 
-        self.currentSellList=tk.Text(root)
+        self.currentSellList=tk.Text(root, background='white')
         #self.currentSellList.insert(tk.END,"2 Escobas de 2000")
         self.currentSellList.place(x=240,y=330,width=323,height=150)
 
@@ -259,6 +259,7 @@ class App:
     def reportsSells_command(self):
         trackingObject = tracking()
         tracks = trackingObject.sellsReport()
+        plt.title("VENTAS")
         plt.plot(tracks[0], tracks[1])
         plt.show()
 
@@ -285,4 +286,5 @@ class App:
 if __name__ == "__main__":
     root = tk.Tk()
     app = App(root)
+    root.configure(bg="white")
     root.mainloop()
