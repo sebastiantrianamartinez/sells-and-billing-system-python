@@ -57,7 +57,3 @@ class tracking:
 
     def sellsCash(self):
         return [self.xAxe, self.lasDaysCash]
-
-trackingObject = tracking()
-print(str(trackingObject.sellsReport()[1]))
-print(str(trackingObject.sellsCash()[1]))
